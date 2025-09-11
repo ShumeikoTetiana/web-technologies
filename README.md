@@ -1,2 +1,2 @@
 # web-technologies
-hi for everyon
+hi for everyone
