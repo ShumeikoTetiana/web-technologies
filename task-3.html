@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета Студента</title>
+</head>
+<body>
+
+<h1>Анкета Студента:</h1>
+
+<form action="questionnaire.html" method="get">
+    <h2>Персональні Дані</h2>
+    <fieldset>
+        <legend>Основна Інформація</legend>
+
+        <p>
+            <label for="full_name">ПІБ:</label>
+            <input type="text" id="full_name" name="name" placeholder="Іваненко Іван Іванович" tabindex="1" required>
+        </p>
+
+        <p>
+            <label for="birth_date">Дата народження:</label>
+            <input type="date" id="birth_date" name="birthday" tabindex="2" required>
+        </p>
+
+        <p>
+            <label for="user_email">Email:</label>
+            <input type="email" id="user_email" name="email" placeholder="example@study.ua" autocomplete="off" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="Введіть email: ім'я@домен.зона" tabindex="3" required>
+        </p>
+
+        <p>
+            <label for="mobile_phone">Мобільний номер:</label>
+            <input type="tel" id="mobile_phone" name="phone" placeholder="+380XXXXXXXXX" pattern="\+380\d{9}" title="Введіть телефон: +380XXXXXXXXX" tabindex="4" required>
+        </p>
+
+        <p>
+            <label for="user_password">Пароль:</label>
+            <input type="password" id="user_password" name="password" placeholder="Пароль" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6}$" title="Пароль має містити: 6 символів, хоча б одну велику літеру, одну малу літеру та одну цифру." tabindex="5" required>
+        </p>
+
+    </fieldset>
+
+    <hr>
+
+    <fieldset>
+        <legend>Навчання та Інтереси</legend>
+
+        <p><strong>Форма навчання:</strong></p>
+        <div>
+            <input type="radio" id="form_full" name="study_form" value="full_time" tabindex="6" required>
+            <label for="form_full">Денна</label>
+        </div>
+        <div>
+            <input type="radio" id="form_part" name="study_form" value="part_time" tabindex="7">
+            <label for="form_part">Заочна</label>
+        </div>
+        <div>
+            <input type="radio" id="form_dist" name="study_form" value="distance" tabindex="8">
+            <label for="form_dist">Дистанційна</label></div>
+
+        <p><strong>Поточний семестр:</strong></p>
+        <div>
+            <input type="radio" id="sem_one" name="current_semester" value="first" tabindex="9">
+            <label for="sem_one">Перший</label>
+        </div>
+        <div>
+            <input type="radio" id="sem_two" name="current_semester" value="second" checked tabindex="10">
+            <label for="sem_two">Другий (за замовчуванням)</label>
+        </div>
+        <div>
+            <input type="radio" id="sem_three" name="current_semester" value="third" tabindex="11">
+            <label for="sem_three">Третій</label></div>
+
+        <p><strong>Знання мов програмування:</strong></p>
+        <div>
+            <input type="checkbox" id="lang_c" name="languages" value="C++" tabindex="12">
+            <label for="lang_c">C++</label>
+        </div>
+        <div>
+            <input type="checkbox" id="lang_py" name="languages" value="Python" tabindex="13">
+            <label for="lang_py">Python</label>
+        </div>
+        <div>
+            <input type="checkbox" id="lang_js" name="languages" value="JavaScript" tabindex="14">
+            <label for="lang_js">JavaScript</label>
+        </div>
+        <div>
+            <input type="checkbox" id="lang_java" name="languages" value="Java" tabindex="15">
+            <label for="lang_java">Java</label>
+        </div>
+
+        <p>
+            <label for="user_comment">Ваші очікування від навчання:</label>
+            <textarea id="user_comment" name="expect" placeholder="Введіть ваш коментар тут..." tabindex="16" required></textarea>
+        </p>
+
+    </fieldset>
+
+
+
+    <fieldset>
+        <legend>Додаткові поля</legend>
+
+        <p>
+            <label for="faculty_single">Виберіть Факультет:</label>
+            <select id="faculty_single" name="faculty" required tabindex="17">
+                <option value="faculty1">Факультет 1: Інформаційні технології</option>
+                <option value="faculty2">Факультет 2: Економіка</option>
+                <option value="faculty3" selected>Факультет 3: Право</option>
+                <option value="faculty4">Факультет 4: Природничі науки</option>
+                <option value="faculty5">Факультет 5: Гуманітарні науки</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="courses_multiple">Виберіть додаткові курси:</label>
+            <select id="courses_multiple" name="extra_courses" multiple tabindex="18">
+                <option value="courses_1">Веб-дизайн</option>
+                <option value="courses_2">Data Science</option>
+                <option value="courses_3">Кібербезпека</option>
+                <option value="courses_4">Менеджмент проектів</option>
+                <option value="courses_5">Хмарні технології</option>
+                <option value="courses_6">Ігрове програмування</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="city_optgroup">Виберіть місто проживання:</label>
+            <select id="city_optgroup" name="city_group" required tabindex="19">
+                <optgroup label="Захід України">
+                    <option value="city-lviv">Львів</option>
+                    <option value="city-che">Чернівці</option>
+                    <option value="city-ivano-fran">Івано-Франківськ</option>
+                </optgroup>
+                <optgroup label="Центр України">
+                    <option value="city-kyіv">Київ</option>
+                    <option value="city-vin">Вінниця</option>
+                    <option value="city-che">Черкаси</option>
+                </optgroup>
+                <optgroup label="Південь України">
+                    <option value="city-odesa">Одеса</option>
+                    <option value="city-nik">Миколаїв</option>
+                    <option value="city-kher">Херсон</option>
+                </optgroup>
+                <optgroup label="Схід України">
+                    <option value="city-kharkiv">Харків</option>
+                    <option value="city-dnipro">Дніпро</option>
+                    <option value="city-zap">Запоріжжя</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="search_hobby">Введіть Ваше хобі:</label>
+            <input list="hobbies" id="search_hobby" name="hobby_search" placeholder="Почніть вводити..." tabindex="20">
+            <datalist id="hobbies">
+                <option value="Читання">
+                <option value="Спорт">
+                <option value="Подорожі">
+                <option value="Програмування">
+                <option value="Малювання">
+            </datalist>
+        </p>
+        <p>
+            <label for="audio_files">Завантажте аудіофайли (досвід):</label>
+            <input type="file" id="audio_files" name="audio_upload"
+                   accept="audio/*" multiple tabindex="21">
+        </p>
+
+    </fieldset>
+
+    <hr>
+
+    <p>
+        <button type="submit" tabindex="21">Надіслати Анкету</button>
+        <button type="reset" tabindex="22">Очистити Форму</button>
+    </p>
+
+</form>
+</body>
+</html>
