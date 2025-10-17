@@ -1,0 +1,103 @@
+div{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 165, 0);
+    width: 500px;
+    padding: 20px;
+    color: white;
+}
+h1{
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+ul > li{
+    background-color: rgb(103, 158, 128);
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: url('/task-1/rule.png');
+    background-position: 10px 0;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+}
+ul ul li{
+    font-size: 18px;
+    font-style: italic;
+    background-color: rgb(153, 180, 102);
+    margin-bottom: 10px;
+    margin-left: 40px;
+    padding-left: 15px;
+    padding-bottom: 0;
+}
+span{
+    margin: 0 20px 10px 20px;
+    display: inline-block;
+    padding: 10px;
+}
+ul > li > span{
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(199, 124, 106);
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+ul ul li span{
+    font-weight: 500;
+    font-size: 16px;
+    background-color: rgb(218, 106, 32);
+    padding: 15px;
+    margin-bottom: 0;
+}
+.icon-route{
+    background-image: url('/task-1/ad_units.png');
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+}
+.icon-airplane_ticket {
+    background-image: url('/task-1/airplane_ticket.png');
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+
+}
+.icon-hotel {
+    background-image: url('/task-1/hotel.png');
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+}
+.icon-car {
+    background-image: url('/task-1/car_rental.png');
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+}
+.icon-bar {
+    background-image: url('/task-1/local_bar.png');
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+}
+.icon-casino {
+    background-image: url('/task-1/casino.png');
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+}
+.icon-museum {
+    background-image: url('/task-1/museum.png');
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+}
+.icon-festival {
+    background-image: url('/task-1/festival.png');
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+}

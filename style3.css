@@ -1,0 +1,131 @@
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    line-height: 1.5;
+    padding: 10px;
+    margin: 0;
+}
+
+h1 {
+    text-align: left;
+    color: #212529;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-weight: 600;
+}
+
+h2 {
+    color: #212529;
+    border-bottom: 1px solid #b3d7ff;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+form {
+    max-width: 800px;
+    margin-left: 20px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 25px;
+    background-color: transparent;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+label {
+    /*display: block;*/
+    font-weight: 500;
+    color: #495057;
+    width: auto;
+}
+
+input[type="text"], input[type="date"], input[type="email"], input[type="tel"], input[type="password"], input[type="file"], textarea, select
+{
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: #495057;
+    background-color: #fdfdfe;
+}
+
+input[type="text"]:hover, input[type="date"]:hover, input[type="email"]:hover, input[type="tel"]:hover, input[type="password"]:hover,  textarea:hover
+{
+    border-color: #b3d7ff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);}
+
+
+
+input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="password"]:focus, textarea:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+textarea {
+    min-height: 120px;
+}
+
+fieldset div input[type="radio"], fieldset div input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+    margin-bottom: 0;
+    accent-color: #007bff;
+}
+
+fieldset div label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+p label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #495057;
+}
+button {
+    padding: 12px 25px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+button[type="reset"] {
+    background-color: #6c757d;
+    color: white;
+}
+
+button[type="reset"]:hover {
+    background-color: #5a6268;
+}
