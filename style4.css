@@ -1,0 +1,38 @@
+p.text-background span {
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
+}
+div .text-background span {
+    background: #ffff00;
+}
+span span {
+    background: #808080;
+    text-decoration: line-through;
+}
+ol span span {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+section > p {
+    text-shadow: 3px 3px 5px #ff0000;
+    text-indent: 50px;
+}
+li > ul {
+    list-style-image: url("/li.svg") ;
+}
+div > p.text-background {
+    word-spacing: 50px;
+}
+.bold > p {
+    font-weight: bold;
+}
+.bold > section > p {
+    line-height: 45px;
+}
+img + p{
+    background-color: #8d4513;
+}
+section ~ p {
+    color: #ff0000;
+}

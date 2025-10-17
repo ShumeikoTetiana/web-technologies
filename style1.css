@@ -1,0 +1,36 @@
+*{
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+}
+p{
+    color: #008000;
+    text-align: center;
+}
+div{
+    text-align: justify;
+}
+.change-color{
+    color: #f00;
+}
+.single-line{
+    white-space: nowrap;
+}
+#special-text{
+    font-style: italic;
+    font-weight: bold;
+}
+.shadow{
+    text-shadow: 5px -5px 3px #ff0000;
+}
+.style-for-div1{
+    text-decoration: line-through;
+    text-transform: uppercase;
+    text-indent: 50px;
+}
+.style-for-div2{
+    letter-spacing: 30px;
+    word-spacing: 50px;
+}
+
+

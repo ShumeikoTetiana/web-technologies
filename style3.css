@@ -1,0 +1,24 @@
+*{
+    text-align: left;
+}
+#menu > li > a {
+    color: green;
+}
+.fruits{
+    list-style: none;
+}
+.vegetables{
+    list-style-image: url("/li.svg") ;
+}
+.berries a{
+    text-decoration: none;
+}
+.berries{
+    list-style: square;
+}
+a{
+    color: #800080;
+}
+.other {
+    list-style-position: inside;
+}
