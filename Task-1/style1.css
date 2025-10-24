@@ -1,0 +1,46 @@
+.main-container {
+    width: 1140px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-right {
+    float: right;
+    width: 200px;
+}
+.img-left {
+    float: left;
+    width: 200px;
+}
+.multi-column-text {
+    clear: both;
+    margin-top: 90px;
+    column-count: 3;
+    column-gap: 35px;
+    column-rule: 5px dotted #dc9eca;
+}
+.logo{
+    float: left;
+    width: 90px;
+    margin-right: 450px;
+}
+.menu {
+    list-style-type: none;
+    padding: 15px;
+    margin: 0;
+}
+.menu li{
+    margin: 10px;
+    float: left;
+}
+.menu li a{
+    display: inline-block;
+    padding: 10px;
+    background-color: #fddfe7;
+    text-decoration: none;
+    color: #9c847c;
+}
+p {
+    margin: 0;
+    padding: 0;
+}

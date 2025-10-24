@@ -1,0 +1,91 @@
+.gradient-item {
+    margin: 50px 20px 10px 20px;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 400px;
+    float: left;
+}
+.container{
+    overflow: hidden;
+    clear: both;
+}
+.liner-gradient{
+    background-image: linear-gradient(to top right, green, yellow, blue, orange););
+}
+.squares-gradient {
+    background-size: 80px 80px;
+    background: linear-gradient(45deg, #367036 17%, white 25%, transparent 25%, transparent 75%, #9a7839 75%, blue 95%),
+    linear-gradient(45deg, #dddd35 17%, white 25%, transparent 25%, transparent 75%, #c31cc3 75%, orange 95%);
+    background-size: 80px 80px;
+    background-position: 0 0, 40px 40px;
+}
+.lines-gradient {
+    background-image: repeating-linear-gradient(to right, #008000, #ffffff 15%,  #1a73e8 17%, #dddd35 35%);
+}
+
+.coloured-corners {
+    background: linear-gradient(to left top, #dddd35 35%, transparent 25%, transparent 75%),
+    linear-gradient(to right top, #008000 25%, transparent 25%, transparent 75%),
+    linear-gradient(to right bottom, #1a73e8 25%, transparent 50%, transparent 100%),
+    linear-gradient(to left bottom, #ff8800 25%, transparent 60%, transparent 100%);
+
+
+}
+.multicolour {
+    background-blend-mode: multiply;
+    background: linear-gradient(to right top, #703ca5 10%, transparent 40%, transparent 80%),
+    linear-gradient(to left bottom, #f66a1e 10%, transparent 40%, transparent 80%),
+    linear-gradient(350deg,
+            #ffc107 0%,
+            #f5d0a9 5%,
+            #c43c7b 16%,
+            #7d4c82 24%,
+            #4CAF50 32%,
+            #ffeb3b 39%,
+            #d159a6 47%,
+            #8b65c3 56%,
+            #0d47a1 64%,
+            #76ff03 73%,
+            #ffc107 82%,
+            #ff9800 91%,
+            #ff4081 100%);
+}
+.img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+.logo{
+    float: left;
+    width: 90px;
+    margin-right: 450px;
+
+}
+.menu {
+    list-style-type: none;
+    padding: 15px;
+
+    margin: 0;
+}
+.menu li{
+    margin: 10px;
+    float: left;
+}
+.menu li a{
+    display: inline-block;
+    padding: 10px;
+    background-color: #fddfe7;
+    text-decoration: none;
+    color: #9c847c;
+}
+.main-container {
+    width: 1140px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+
+}

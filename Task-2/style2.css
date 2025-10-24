@@ -1,0 +1,98 @@
+.main-container {
+    width: 1140px;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.container{
+    padding: 0;
+    margin: 0 auto;
+    width: 1020px;
+    overflow: hidden;
+}
+.logo{
+    float: left;
+    width: 90px;
+    margin-right: 450px;
+}
+.menu {
+    list-style-type: none;
+    padding: 15px;
+    margin: 0;
+}
+.menu li{
+    margin: 10px;
+    float: left;
+}
+.menu li a{
+    display: inline-block;
+    padding: 10px;
+    background-color: #fddfe7;
+    text-decoration: none;
+    color: #9c847c;
+}
+.block {
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: justify;
+    background-color: #fff;
+    float: left;
+}
+.simple-coloured {
+    border: 2px solid #dcb9d1;
+}
+.round-border{
+    border-radius: 15px;
+}
+.leaf-border{
+    border-radius: 80px 0 80px 0;
+}
+.petal-borders {
+    margin: 15px 5px;
+    border-radius: 50px 150px;
+}
+.double-coloured {
+    border: 5px solid #dcb9d1;
+}
+.rectangle-border {
+    border-top: 10px solid #804f70;
+    border-bottom: 10px solid #804f70;
+    border-radius: 150px / 30px;
+
+}
+.convex-border {
+    border-left: 15px solid #804f70;
+    border-right: 20px solid #804f70;
+    border-radius: 250px 80px / 90px 25px 60px;
+}
+.triangular-border {
+    border-left: 20px solid #804f70;
+    border-bottom-right-radius: 100%;
+}
+.sharp-border {
+    border: 10px solid;
+    border-image: url("../Task-2/border_0.png") 21% round;
+}
+.diamond-border {
+    border: 10px solid;
+    border-image: url("../Task-2/border_0.png") 20 stretch;
+}
+.dotted-border {
+    border: 10px solid;
+    border-image: url("../Task-2/border_0.png") 34% round;
+}
+.mess-border{
+    border: 10px solid;
+    border-image: url("../Task-2/border_1.png") 15 stretch;
+}
+.circle-border {
+    border: 10px solid;
+    border-image: url("../Task-2/border_1.png") 13 round;
+}
+.frame-border {
+    border: 10px solid;
+    border-image: url("../Task-2/border_1.png") 10 stretch;
+}
