@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.weather-widget {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background: #868686;
+    padding-bottom: 50px;
+}
+.main-area {
+    position: relative;
+    height: 300px;
+}
+.box {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    color: white;
+}
+.box-a {
+    left: 0;
+    width: 55%;
+    height: 100%;
+    background-color: #000;
+    z-index: 4;
+    padding: 20px;
+    margin: 40px;
+    box-sizing: border-box;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+.box-b {
+    top: 10%;
+    right: 40px;
+    width: 45%;
+    height: 100%;
+    z-index: 30;
+}
+.temperature {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 80px;
+    font-weight: 700;
+    z-index: 5;
+}
+.navigation {
+    position: absolute;
+    top: 30%;
+    left: 20px;
+    z-index: 5;
+    background: #868686;
+    width: 95px;
+    height: 55px;
+}
+.arrow {
+    display: inline-block;
+    padding: 5px 10px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 0;
+    margin-top: 10px;
+}
+.cloud-image {
+    position: absolute;
+    top: 10%;
+    right: -5%;
+    max-width: 160%;
+    height: auto;
+}
+.forecast-list {
+    position: absolute;
+    bottom: 40px;
+    right: 10%;
+    width: 50%;
+    height: 20%;
+    display: table;
+    table-layout: fixed;
+    list-style: none;
+    padding: 10px;
+    background-color: #bfbfbf;
+    box-shadow: 5px 5px rgb(87, 83, 86);
+    z-index: 2;
+}
+.day-forecast {
+    display: table-cell;
+    width: 20%;
+    vertical-align: bottom;
+    text-align: center;
+    color: #333;
+    padding: 5px 0;
+}
+.day-forecast .day {
+    display: block;
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+.day-forecast .temp {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.day-forecast {
+    text-align: center;
+    padding: 0 5px;
+    color: #333;
+}
+
+.day-forecast .day {
+    display: block;
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+.day-forecast .temp {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+}
+.arrow:hover {
+    background-color: #616161;
+}
+.arrow:active {
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}

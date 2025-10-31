@@ -1,0 +1,46 @@
+.block{
+    color: #ffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    border-width: 2px;
+    border-color: #000000;
+    border-style: solid;
+}
+.top{
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    right: 100px;
+    bottom: 10px;
+    background-color: #3f8b8e;
+}
+.right {
+    height: 150px;
+    width: 80px;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    background-color: #3f8b8e;
+
+}
+.left {
+    height: 150px;
+    width: 903px;
+    position: absolute;
+    top: 150px;
+    right: 100px;
+    left: 233px;
+    background-color: #9c847c;
+}
+.bottom{
+    height: 100px;
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    right: 100px;
+    bottom: 10px;
+    background-color: #3f8b8e;
+
+}

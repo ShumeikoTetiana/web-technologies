@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding-left: 220px;
+    font-family: Arial, sans-serif;
+    background: #d0d0d0;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #444;
+    width: 100%;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.navbar li {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    float: left;
+    background: #868686;
+}
+.navbar li.right {
+    float: right;
+}
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.navbar a:hover, .navbar a:focus{
+    background-color: #4caf50;
+    outline: none;
+}
+.navbar a:active{
+    background-color: #2e6830;
+
+}
+.navbar .active a {
+    background-color: #4caf50;
+}
+.navbar a .nav-icon {
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+.navbar .dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #555;
+    min-width: 160px;
+    top: 100%;
+    float: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .dropdown li {
+    display: block;
+    float: none;
+}
+
+.navbar .dropdown a {
+    padding: 10px 16px;
+    text-align: left;
+    background-color: #555;
+}
+
+.navbar .dropdown a:hover {
+    background-color: #777;
+}
+.navbar li:hover .dropdown, .navbar li:focus .dropdown {
+    display: block;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background-color: #0d6efd;
+    overflow-y: auto;
+    padding-top: 50px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    position: relative;
+}
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-bottom: 1px solid #0a58ca;
+    transition: background-color 0.3s;
+}
+
+.sidebar a .sidebar-icon {
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+.sidebar a:hover, .sidebar a:focus{
+    background-color: #0056b3;
+    outline: none;
+}
+.sidebar .active > a {
+    background-color: #004080;
+}
+
+.sidebar ul ul {
+    display: none;
+    background-color: #0b5ed7;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li:hover > ul,
+.sidebar li:focus-within > ul {
+    display: block;
+}
+.sidebar ul ul ul {
+    background-color: #084298;
+    padding-left: 10px;
+}
+
+.sidebar ul ul a {
+    padding-left: 40px;
+}
+
+.sidebar ul ul ul a {
+    padding-left: 55px;
+}
+body {
+    margin: 0;
+    padding-left: 220px;
+    font-family: Arial, sans-serif;
+    background: #d0d0d0;
+}

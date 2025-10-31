@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #444;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #fff;
+}
+.form-container {
+    background-image: url("Task-3/pf-s114-pm-1258-02.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 0 20px 20px 20px;
+    width: 620px;
+    border: 20px solid #868686;
+    box-sizing: border-box;
+}
+label {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+}
+.form-title {
+    text-align: center;
+    font-size: 25px;
+    color: #7d21b3;
+    font-weight: 700;
+    font-style: italic;
+    margin: 20px 0 20px 20px;
+    position: relative;
+}
+.form-title::first-letter {
+    font-size: 50px;
+    color: pink;
+}
+.form-title::before {
+    content: "";
+    position: absolute;
+    top: 70%;
+    left: -20px;
+    width: 25%;
+    height: 3px;
+    background: #8f1717;
+}
+.form-title::after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    right: -20px;
+    width: 25%;
+    height: 3px;
+    background: #8f1717;
+}
+.title-underline {
+    width: 70%;
+    height: 3px;
+    background: #8f1717;
+    margin: 0 auto 20px auto;
+
+}
+.main-text {
+    display: inline-block;
+}
+.form-title .main-text::first-letter {
+    font-size: 50px;
+    color: pink;
+}
+.hover-text {
+    display: none;
+    color: #d114a8;
+    font-size: 25px;
+    font-style: italic;
+}
+.form-title:hover .hover-text::first-letter {
+    font-size: 50px;
+    color: pink;
+}
+.form-title::before {
+    left: 0;
+    width: 25%;
+}
+.form-title::after {
+    right: 0;
+    width: 25%;
+}
+.form-title:hover .main-text {
+    display: none;
+}
+.form-title:hover .hover-text {
+    display: inline-block;
+}
+.form-title:hover::before {
+    width: 0;
+    left: 50%;
+}
+.form-title:hover::after {
+    width: 80%;
+    left: 10%;
+    right: auto;
+    top: auto;
+    bottom: -10px;
+    background-color: #00FF00;
+}
+.form-title:hover + .title-underline {
+    height: 0;
+}
+
+
+input, textarea {
+    font-size: 16px;
+    color: black;
+    font-weight: 700;
+    text-indent: 20px;
+    border-radius: 10px;
+    opacity: 0.6;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+.form-row {
+    margin: 0 -10px;
+}
+.form-row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.input-float-group {
+    float: left;
+    width: 260px;
+    margin: 0 10px 15px 10px;
+}
+.text-input, .password-input {
+    width: 250px;
+    height: 30px;
+    display: block;
+}
+textarea {
+    width: 530px;
+    height: 46px;
+    resize: none;
+    padding: 5px;
+    line-height: normal;
+    text-indent: 20px;
+    display: block;
+    margin: 0 10px 15px 0;
+}
+textarea::first-line {
+    color: red;
+}
+
+.text-input:hover {
+    border-bottom: 4px solid #fbff00;
+}
+.text-input:focus {
+    border-bottom: 4px solid #ffa600;
+}
+
+.password-input:hover {
+    border-bottom: 4px solid #1eff00;
+}
+.password-input:focus {
+    border-bottom: 4px solid #00ffea;
+}
+
+textarea:hover {
+    box-shadow: 0 0 10px 10px rgba(233, 27, 154, 0.6);
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    padding-right: 20px;
+}
+
+.button {
+    width: 130px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0;
+    margin-left: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.reset {
+    border: 3px solid #e64a19;
+    color: #e64a19;
+}
+.reset:hover {
+    border: 3px solid #e64a19;
+    color: white;
+    background-color: #e64a19;
+    border-radius: 15px;
+}
+.reset:active {
+    border: 3px solid #ecfd00;
+    background-color: #a02904;
+    border-radius: 25px;
+    position: relative;
+}
+
+.button-ok {
+    border: 3px solid #0097a7;
+    color: #0097a7;
+}
+.button-ok:hover {
+    border: 3px solid #0097a7;
+    color: white;
+    background-color: #0097a7;
+    border-radius: 15px; /
+}
+.button-ok:active {
+    border: 3px solid #ecfd00;
+    background-color: #014950;
+    border-radius: 25px;
+    position: relative;
+}
+
+
+.button:active::after {
+    content: " \2713";
+    font-size: 24px;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ecfd00;
+}
+.reset:active::after {
+    content: " \2717";
+    color: #ecfd00;
+}
