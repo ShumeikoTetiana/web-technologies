@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.block {
+    background-color: #ffc83b;
+    border: 3px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    max-width: 1300px;
+    height: 90vh;
+    margin: 0 auto;
+}
+
+.grid-container {
+    counter-reset: block-counter;
+}
+
+.block::before {
+    counter-increment: block-counter;
+    content: counter(block-counter);
+}
+
+.b-1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 12;
+}
+
+.b-2 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 6;
+}
+
+.b-3 {
+    grid-column: 2 / span 1;
+    grid-row: 7 / span 6;
+}
+
+.b-4 {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 4;
+}
+
+.b-5 {
+    grid-column: 3 / span 1;
+    grid-row: 5 / span 4;
+}
+
+.b-6 {
+    grid-column: 3 / span 1;
+    grid-row: 9 / span 4;
+}
+
+.b-7 {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 3;
+}
+
+.b-8 {
+    grid-column: 4 / span 1;
+    grid-row: 4 / span 3;
+}
+
+.b-9 {
+    grid-column: 4 / span 1;
+    grid-row: 7 / span 3;
+}
+
+.b-10 {
+    grid-column: 4 / span 1;
+    grid-row: 10 / span 3;
+}
+
+.b-11 {
+    grid-column: 5 / span 1;
+    grid-row: 1 / span 2;
+}
+
+.b-12 {
+    grid-column: 5 / span 1;
+    grid-row: 3 / span 2;
+}
+
+.b-13 {
+    grid-column: 5 / span 1;
+    grid-row: 5 / span 2;
+}
+
+.b-14 {
+    grid-column: 5 / span 1;
+    grid-row: 7 / span 2;
+}
+
+.b-15 {
+    grid-column: 5 / span 1;
+    grid-row: 9 / span 2;
+}
+
+.b-16 {
+    grid-column: 5 / span 1;
+    grid-row: 11 / span 2;
+}
+
+.b-17, .b-18, .b-19, .b-20, .b-21, .b-22,
+.b-23, .b-24, .b-25, .b-26, .b-27, .b-28 {
+    grid-column: 6;
+    height: 87%;
+}
+
+.b-17 { grid-row: 1 / span 1; }
+.b-18 { grid-row: 2 / span 1; }
+.b-19 { grid-row: 3 / span 1; }
+.b-20 { grid-row: 4 / span 1; }
+.b-21 { grid-row: 5 / span 1; }
+.b-22 { grid-row: 6 / span 1; }
+.b-23 { grid-row: 7 / span 1; }
+.b-24 { grid-row: 8 / span 1; }
+.b-25 { grid-row: 9 / span 1; }
+.b-26 { grid-row: 10 / span 1; }
+.b-27 { grid-row: 11 / span 1; }
+.b-28 { grid-row: 12 / span 1; }
