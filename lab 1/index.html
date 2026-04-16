@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управління товарами</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<header>
+    <h1>Мій Магазин</h1>
+    <div class="total-box">Загальна сума: <span id="total-val">0</span> грн</div>
+</header>
+
+<main>
+    <div class="controls">
+        <div id="filters">
+            <span>Фільтр:</span>
+            <div id="filter-btns"></div>
+            <button onclick="resetFilters()">Усі</button>
+        </div>
+        <div id="sorting">
+            <span>Сортувати:</span>
+            <button onclick="setSort('price')">За ціною</button>
+            <button onclick="setSort('createdAt')">За датою</button>
+            <button onclick="setSort('updatedAt')">За оновленням</button>
+        </div>
+    </div>
+
+    <button class="add-btn" onclick="toggleModal(true)">+ Додати товар</button>
+
+    <div id="product-list"></div>
+</main>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <h3 id="modal-title">Товар</h3>
+        <form id="prod-form" onsubmit="handleFormSubmit(event)">
+            <input type="hidden" id="edit-id">
+            <input type="text" id="p-name" placeholder="Назва" required minlength="2">
+            <input type="number" id="p-price" placeholder="Ціна" required min="1">
+            <select id="p-cat" required>
+                <option value="">Оберіть категорію</option>
+                <option value="Електроніка">Електроніка</option>
+                <option value="Одяг">Одяг</option>
+                <option value="Дім">Дім</option>
+            </select>
+            <input type="url" id="p-img" placeholder="URL картинки" required>
+            <div class="modal-btns">
+                <button type="button" onclick="toggleModal(false)">Скасувати</button>
+                <button type="submit">Зберегти</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="toast-container"></div>
+<script src="script1.js"></script>
+</body>
+</html>

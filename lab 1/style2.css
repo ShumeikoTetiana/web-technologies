@@ -1,0 +1,150 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #eef2f3;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.todo-container {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    align-self: flex-start;
+}
+
+.todo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.todo-header h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+}
+
+.sort-chips button {
+    border: none;
+    background: #f3f4f6;
+    padding: 5px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.input-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+#todo-input {
+    flex: 1;
+    border: 2px solid #f3f4f6;
+    padding: 14px 20px;
+    border-radius: 15px;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#todo-input:focus {
+    border-color: #4f46e5;
+}
+
+.add-btn {
+    background: #4f46e5;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    transform: scale(1.05);
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 16px;
+    background: #fafafa;
+    border-radius: 16px;
+    margin-bottom: 12px;
+    animation: slideUp 0.3s ease;
+    border: 1px solid #f1f1f1;
+}
+
+.item.done {
+    opacity: 0.6;
+    background: #f3f4f6;
+}
+
+.item.done span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #4f46e5;
+}
+
+.item span {
+    flex: 1;
+    outline: none;
+    font-size: 16px;
+}
+
+.btn-del {
+    border: none;
+    background: none;
+    color: #ff5f5f;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+}
+
+@media (max-width: 400px) {
+    .todo-container {
+        padding: 20px;
+    }
+
+    .todo-header h2 {
+        font-size: 18px;
+    }
+
+    .input-row {
+        gap: 8px;
+    }
+}
